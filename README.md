@@ -63,3 +63,8 @@ chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 kubeadm join <ENDEREÇO_IP>:6443 --token <TOKEN> --discovery-token-ca-cert-hash sha256:<TOKEN>
 ```
+
+* Show cluster, run in Master
+```
+kubectl get nodes
+```

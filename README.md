@@ -88,8 +88,17 @@ kubectl get all --all-namespaces
  ```
 
  
- * Run enviroment local (simulation)
+ ## Run enviroment local (simulation)
  * Tool kind (https://kind.sigs.k8s.io/docs/user/quick-start/#installation)
  ```
  kind create cluster
  ```
+ Or create with name
+ ```
+ kind create cluster --name mycluster
+ ```
+
+* After installation local, show in Docker
+```
+docker container ls
+```

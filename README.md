@@ -86,3 +86,10 @@ kubectl get all --all-namespaces
  ```
  kubectl apply -f .\ -R 
  ```
+
+ 
+ * Run enviroment local (simulation)
+ * Tool kind (https://kind.sigs.k8s.io/docs/user/quick-start/#installation)
+ ```
+ kind create cluster
+ ```

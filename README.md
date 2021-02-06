@@ -1,5 +1,5 @@
-# kubernetes ![](https://miro.medium.com/max/700/0*0xAFVp2oiGROzPiX)
-Commands and examples to kubernetes and docker
+![](https://miro.medium.com/max/700/0*0xAFVp2oiGROzPiX)
+Commands and examples to kubernetes
 
 Use extension Vs Code:
  - docker
@@ -21,3 +21,16 @@ basicamente de 2 elementos:
 por garantir que os pods e os contêineres estão sendo executados
 corretamente.
 <br> - Kubectl: Responsável por interagir com o cluster.
+
+
+## Install tools to kubernetes (kubelet kubeadm kubectl)
+
+*Add repositories kubernetes
+```
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+```
+
+*Add packages
+```
+echo “deb http://apt.kubernetes.io/ kubernetes-xenial main” > / etc/apt/sources.list.d/kubernetes.list
+```

@@ -103,7 +103,7 @@ kubectl get all --all-namespaces
 docker container ls
 ```
 
-* Show info cluster
+* Show info cluster, last parameter name cluster (kind-mycluster)
 ```
 kubectl cluster-info --context kind-mycluster
 ```

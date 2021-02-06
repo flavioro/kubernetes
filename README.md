@@ -23,7 +23,7 @@ corretamente.
 <br> - Kubectl: Responsável por interagir com o cluster.
 
 
-## Install tools to kubernetes (kubelet kubeadm kubectl)
+## Install tools to kubernetes (kubelet kubeadm kubectl) in ubuntu
 
 *Add repositories kubernetes
 ```
@@ -33,4 +33,13 @@ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
 *Add packages
 ```
 echo “deb http://apt.kubernetes.io/ kubernetes-xenial main” > / etc/apt/sources.list.d/kubernetes.list
+```
+
+* Update packages
+```
+apt-get update
+```
+* Install tools kubernetes
+```
+apt-get install -y kubelet kubeadm kubectl
 ```

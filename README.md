@@ -43,3 +43,18 @@ apt-get update
 ```
 apt-get install -y kubelet kubeadm kubectl
 ```
+
+* Inicialize kubernetes to Scaleway (scaleway.com), ONLY SERVER MASTER
+```
+kubeadm init --apiserver-cert-extra-sans dominioOrIp
+```
+
+* Other examples Inicialize kubernetes
+https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-init/
+
+* Command create file configuration
+```
+mkdir -p $HOME/.kube
+cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+chown $(id -u):$(id -g) $HOME/.kube/config
+```

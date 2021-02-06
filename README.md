@@ -5,5 +5,5 @@ Use extension Vs Code:
  - docker
  - kubernetes
  
- * Tools
+## Tools##
  - kubectl (tool cli in https://kubernetes.io/docs/tasks/tools/install-kubectl/)

@@ -7,3 +7,9 @@ Use extension Vs Code:
  
 ## Tools
  - kubectl (tool cli in https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+
+O Kubernetes é o orquestrador de clusters de contêineres mais 
+popular atualmente no mercado. O cluster Kubernetes é formado
+basicamente de 2 elementos:
+• A máquina Control Plane que gerencia o cluster;
+• E as máquinas Nodes - ou Nós - que executam as aplicações.

@@ -112,3 +112,14 @@ Or
 ```
 kubectl cluster-info
 ```
+
+* Delete cluster
+```
+kind delete cluster
+```
+Or
+
+```
+kind delete cluster --name mycluster
+```
+

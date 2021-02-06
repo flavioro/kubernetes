@@ -123,3 +123,10 @@ Or
 kind delete cluster --name mycluster
 ```
 
+### Create multi nodes with kind, use file configuration, see more details https://kind.sigs.k8s.io/docs/user/configuration/
+* Create file configuration 'config.yaml'
+```
+kind create cluster --name multinode --config .\config.yaml 
+```
+
+

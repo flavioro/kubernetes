@@ -77,3 +77,12 @@ kubectl apply -f “https://cloud.weave.works/k8s/net?k8sversion=$(kubectl versi
 ```
 kubectl get all --all-namespaces
 ```
+
+ *Create Deployment
+ ```
+ kubectl apply -f nginx-deployment.yaml
+ ```
+ Or directory current and recursive
+ ```
+ kubectl apply -f .\ -R 
+ ```

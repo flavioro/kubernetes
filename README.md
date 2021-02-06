@@ -102,3 +102,13 @@ kubectl get all --all-namespaces
 ```
 docker container ls
 ```
+
+* Show info cluster
+```
+kubectl cluster-info --context kind-mycluster
+```
+Or
+
+```
+kubectl cluster-info
+```

@@ -68,3 +68,12 @@ kubeadm join <ENDEREÇO_IP>:6443 --token <TOKEN> --discovery-token-ca-cert-hash 
 ```
 kubectl get nodes
 ```
+
+* Install interface network, ONLY MASTER
+```
+kubectl apply -f “https://cloud.weave.works/k8s/net?k8sversion=$(kubectl version | base64 | tr -d ‘\n’)”
+```
+* Show structure cluster
+```
+kubectl get all --all-namespaces
+```

@@ -58,3 +58,9 @@ mkdir -p $HOME/.kube
 cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 chown $(id -u):$(id -g) $HOME/.kube/config
 ```
+
+* Command run in other nodes <TOKEN> is token generated
+ 
+```
+kubeadm join <ENDEREÇO_IP>:6443 --token <TOKEN> --discovery-token-ca-cert-hash sha256:<TOKEN>
+```

@@ -52,7 +52,7 @@ kubeadm init --apiserver-cert-extra-sans dominioOrIp
 * Other examples Inicialize kubernetes
 https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-init/
 
-* Command create file configuration
+* Command create file configuration, ONLY SERVER MASTER
 ```
 mkdir -p $HOME/.kube
 cp -i /etc/kubernetes/admin.conf $HOME/.kube/config

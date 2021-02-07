@@ -123,6 +123,20 @@ Or
 kind delete cluster --name mycluster
 ```
 
+<br>List all pods
+```
+kubectl get pod
+```
+<br>List all services
+```
+kubectl get services
+```
+<br>Detail pod
+```
+kubectl describe pod <Name_POD>
+```
+
+
 ### Create multi nodes with kind, use file configuration, see more details https://kind.sigs.k8s.io/docs/user/configuration/
 * Create file configuration 'config.yaml'
 ```

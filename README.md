@@ -127,6 +127,15 @@ kind delete cluster --name mycluster
 ```
 kubectl get pod
 ```
+<br>List all ReplicaSet
+```
+kubectl get pod replicaset
+```
+* Details, to create file .yaml, indentation must be correct and field name need to be lower case.
+```
+metadata:
+  name: myreplicaset 
+```
 <br>List all services
 ```
 kubectl get services

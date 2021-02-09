@@ -89,6 +89,7 @@ kubectl get all --all-namespaces
 
  
  ## Run enviroment local (simulation)
+ ![](https://storage.googleapis.com/cdn.thenewstack.io/media/2017/11/07751442-deployment.png)
  * Tool kind (https://kind.sigs.k8s.io/docs/user/quick-start/#installation)
  ```
  kind create cluster

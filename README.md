@@ -153,7 +153,11 @@ kubectl get services
 ```
 kubectl describe pod <Name_POD>
 ```
-
+* Use Port Forwarding to Access Applications in a Cluster
+```
+# pod/name_pod and port_local to port_pod
+kubectl port-forward pod/myreplicaset-dd5lf 8080:80
+```
 
 ### Create multi nodes with kind, use file configuration, see more details https://kind.sigs.k8s.io/docs/user/configuration/
 * Create file configuration 'config.yaml'

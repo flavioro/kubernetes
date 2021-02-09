@@ -141,6 +141,10 @@ kubectl get pod replicaset
 metadata:
   name: myreplicaset 
 ```
+<br>Detail ReplicaSet Describe
+```
+kubectl describe replicaset <Name_replicaset>
+```
 <br>List all services
 ```
 kubectl get services

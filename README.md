@@ -131,7 +131,7 @@ kubectl get pod
 ```
 kubectl get pod replicaset
 ```
-* Details, to create file .yaml, indentation must be correct and field name need to be lower case.
+* Details, to create file .yaml, indentation must be correct and the field name must be lowercase.
 ```
 metadata:
   name: myreplicaset 

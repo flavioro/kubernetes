@@ -128,6 +128,10 @@ kind delete cluster --name mycluster
 ```
 kubectl get pod
 ```
+<br>Delete pod
+```
+kubectl delete pod namePod
+```
 <br>List all ReplicaSet
 ```
 kubectl get pod replicaset

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod
+spec:
+  containers:
+    - name: web
+      image: kubedevio/nginx-color:blue
+      ports:
+        - containerPort: 80

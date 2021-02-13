@@ -170,3 +170,8 @@ kind create cluster --name multinode --config .\config.yaml
 ```
 kubectl rollout history deployment nameDeployment 
 ```
+
+* Rollback Deployment, 
+```
+kubectl rollout undo deployment nameDeployment
+```

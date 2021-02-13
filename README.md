@@ -78,7 +78,7 @@ kubectl apply -f “https://cloud.weave.works/k8s/net?k8sversion=$(kubectl versi
 kubectl get all --all-namespaces
 ```
 
- *Create Deployment
+ *Create Deployment kubectl apply -f nameFile.yaml
  ```
  kubectl apply -f nginx-deployment.yaml
  ```
@@ -128,13 +128,14 @@ kind delete cluster --name mycluster
 ```
 kubectl get pod
 ```
-<br>Delete pod
+<br>Delete pod Or Delete replicaset Or Delete deployment
 ```
 kubectl delete pod namePod
+kubectl delete replicaset nameReplicaset
 ```
 <br>List all ReplicaSet
 ```
-kubectl get pod replicaset
+kubectl get replicaset
 ```
 * Details, to create file .yaml, indentation must be correct and the field name must be lowercase.
 ```

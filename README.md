@@ -166,4 +166,7 @@ kubectl port-forward pod/myreplicaset-dd5lf 8080:80
 kind create cluster --name multinode --config .\config.yaml 
 ```
 
-
+### History Deployment, control versions
+```
+kubectl rollout history deployment nameDeployment 
+```

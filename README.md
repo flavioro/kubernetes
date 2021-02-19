@@ -6,12 +6,12 @@
  - Concept;
  - Structure Kubernetes;
  
- * Linux Ubuntu
+ ```* Linux Ubuntu```
  - Tools to Ubuntu (kubelet, kubeadm, kubectl);
  - Settings and install to ubuntu;
  - Install to Master and Node
  
- * Local enviroment (Dev)
+ ```* Local enviroment (Dev)```
  - Settings and Install to enviroment local (Dev)
  - kind (tool to enviroment local)
  - Manager enviroment local with files .yaml

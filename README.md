@@ -1,5 +1,29 @@
 ![](https://miro.medium.com/max/700/0*0xAFVp2oiGROzPiX)
-Commands and examples to kubernetes
+
+### Resume
+ - Extension docker and kubernetes to VsCode;
+ - Tool CLI;
+ - Concept;
+ - Structure Kubernetes;
+ 
+ * Linux Ubuntu
+ - Tools to Ubuntu (kubelet, kubeadm, kubectl);
+ - Settings and install to ubuntu;
+ - Install to Master and Node
+ 
+ * Local enviroment (Dev)
+ - Settings and Install to enviroment local (Dev)
+ - kind (tool to enviroment local)
+ - Manager enviroment local with files .yaml
+ - kubectl and your functions
+ - Create, Delete, Update to pod
+ - Use replicaset, deployment and service
+ - Replicas, port-forword
+ - Create pod with .yaml example
+ - Resiliencia, 
+ - Create replicaset with .yaml example
+ - Create deployment with .yaml example
+ 
 
 Use extension Vs Code:
  - docker

@@ -86,7 +86,7 @@ kubectl get all --all-namespaces
  ```
  kubectl apply -f .\ -R 
  ```
-
+The kubectl command line tool lets you control Kubernetes clusters
  
  ## Run enviroment local (simulation)
  ![](https://storage.googleapis.com/cdn.thenewstack.io/media/2017/11/07751442-deployment.png)

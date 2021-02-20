@@ -1,5 +1,4 @@
 ![](https://geekflare.com/wp-content/uploads/2020/05/Img1DocAndKub.png)
-![](https://miro.medium.com/max/700/0*0xAFVp2oiGROzPiX)
 
 ### Resume
  - Extension docker and kubernetes to VsCode;
@@ -24,6 +23,7 @@
  - Resilience, scalability  
  - Create replicaset with .yaml example
  - Create deployment with .yaml example
+ - Examples files .yaml to service, deployment, replicaset and pod
  
 
 ## Use extension Vs Code:
@@ -260,5 +260,22 @@ spec:
           image: kubedevio/nginx-color:green
           ports:
             - containerPort: 80
+
+```
+
+### Example create service with .yaml, used app: nginx-color
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-nginx
+spec:
+  selector:
+    app: nginx-color
+  ports:
+    - port: 80
+      protocol: TCP
+  type: LoadBalancer
+
 
 ```

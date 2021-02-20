@@ -20,12 +20,12 @@
  - Use replicaset, deployment and service
  - Replicas, port-forword
  - Create pod with .yaml example
- - Resiliencia, 
+ - Resilience, scalability  
  - Create replicaset with .yaml example
  - Create deployment with .yaml example
  
 
-Use extension Vs Code:
+## Use extension Vs Code:
  - docker
  - kubernetes
  

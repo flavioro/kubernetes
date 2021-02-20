@@ -1,4 +1,5 @@
 ![](https://geekflare.com/wp-content/uploads/2020/05/Img1DocAndKub.png)
+![](https://i.octopus.com/docs/deployments/kubernetes/deploy-container/deploy-container.svg)
 
 ### Resume
  - Extension docker and kubernetes to VsCode;

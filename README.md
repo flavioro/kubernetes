@@ -279,3 +279,8 @@ spec:
 
 
 ```
+
+### Manager pods, need to use deployment with file .yaml
+```
+kubectl aplly -f .\deployment.yaml
+```

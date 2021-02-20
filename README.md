@@ -40,6 +40,7 @@ popular atualmente no mercado. O cluster Kubernetes é formado
 basicamente de 2 elementos:
 <br> - A máquina Control Plane que gerencia o cluster;
 <br> - E as máquinas Nodes - ou Nós - que executam as aplicações.
+<br> More about service https://cloud.google.com/kubernetes-engine/docs/concepts/service
 
 ## Structure Kubernetes
 <br> - Kubeadm: Responsável por iniciar o Kubernetes.

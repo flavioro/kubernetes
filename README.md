@@ -199,3 +199,17 @@ kubectl rollout history deployment nameDeployment
 ```
 kubectl rollout undo deployment nameDeployment
 ```
+
+### Example create pod with .yaml
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod
+spec:
+  containers:
+    - name: web
+      image: kubedevio/nginx-color:blue
+      ports:
+        - containerPort: 80
+```

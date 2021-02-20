@@ -213,3 +213,51 @@ spec:
       ports:
         - containerPort: 80
 ```
+
+### Example create replicaset with .yaml
+```
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myreplicaset
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: nginx-color
+  template:
+    metadata:
+      labels:
+        app: nginx-color
+    spec:
+      containers:
+        - name: web
+          image: kubedevio/nginx-color:green
+          ports:
+            - containerPort: 80
+
+```
+
+### Example create deployment with .yaml
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mydeployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx-color
+  template:
+    metadata:
+      labels:
+        app: nginx-color
+    spec:
+      containers:
+        - name: web
+          image: kubedevio/nginx-color:green
+          ports:
+            - containerPort: 80
+
+```

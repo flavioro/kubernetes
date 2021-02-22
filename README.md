@@ -25,6 +25,8 @@
  - Create replicaset with .yaml example
  - Create deployment with .yaml example
  - Examples files .yaml to service, deployment, replicaset and pod
+ - Example deployment and service to mongodb
+ - Example deployment and service to api ()
  
 
 ## Use extension Vs Code:
@@ -286,3 +288,37 @@ spec:
 ```
 kubectl aplly -f .\deployment.yaml
 ```
+
+### Example deployment and service to mongodb
+deployment.yaml
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  # name cannot contain capital letters 
+  name: deploy-mongodb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongodb
+  template:
+    metadata:
+      labels:
+        app: mongodb
+    spec:
+      containers:
+        - name: mongodb
+        # name of image hub.docker and version
+          image: mongo:4.2.8
+          ports:
+            - containerPort: 27017
+          env:
+            # variables environment to username and password
+            - name: MONGO_INITDB_ROOT_USERNAME
+              value: mongouser
+            - name: MONGO_INITDB_ROOT_PASSWORD
+              value: mongopwd
+
+```
+

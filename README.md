@@ -291,7 +291,7 @@ kubectl aplly -f .\deployment.yaml
 
 ### Example deployment and service to mongodb
 deployment.yaml
-```
+``` yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:

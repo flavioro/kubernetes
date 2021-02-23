@@ -339,3 +339,51 @@ spec:
   type: ClusterIP
 ```
 
+### Example deployment and service to api (deployment.yaml and service.yaml)
+deployment.yaml
+``` yaml
+# attention with indentation, can generate error
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: produto-api
+  template:
+    metadata:
+      labels:
+        app: produto-api
+    spec:
+      containers:
+        - name: api
+          # name of docker image
+          image: flavioro/api-produto:v1
+          ports:
+            - containerPort: 8080
+          env:
+            - name: MONGODB_URI
+              value: mongodb://mongouser:mongopwd@mongodb-service:27017/admin
+```
+
+service.yaml
+``` yaml
+apiVersion: v1
+# This field can be (Service, Deployment, ReplicaSet, Pod)
+kind: Service
+metadata:
+  name: api-service
+spec:
+  selector:
+    # name of deployment api
+    app: produto-api
+  ports:
+    # port 80 in the service
+    - port: 80
+      # use of 8080 in the pod (specified in the deployment)
+      targetPort: 8080
+  type: LoadBalancer
+
+```

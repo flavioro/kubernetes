@@ -220,7 +220,7 @@ spec:
 ```
 
 ### Example create replicaset with .yaml
-```
+``` yaml
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
@@ -244,7 +244,7 @@ spec:
 ```
 
 ### Example create deployment with .yaml
-```
+``` yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -268,7 +268,7 @@ spec:
 ```
 
 ### Example create service with .yaml, used app: nginx-color
-```
+``` yaml
 apiVersion: v1
 kind: Service
 metadata:

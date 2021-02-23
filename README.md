@@ -26,7 +26,7 @@
  - Create deployment with .yaml example
  - Examples files .yaml to service, deployment, replicaset and pod
  - Example deployment and service to mongodb
- - Example deployment and service to api ()
+ - Example deployment and service to api (deployment.yaml and service.yaml)
  
 
 ## Use extension Vs Code:
@@ -320,5 +320,22 @@ spec:
             - name: MONGO_INITDB_ROOT_PASSWORD
               value: mongopwd
 
+```
+
+service.yaml
+``` yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb-service
+spec:
+  selector:
+    app: mongodb
+  ports:
+    # port service
+    - port: 27017
+      # port pod mongodb
+      targetPort: 27017
+  type: ClusterIP
 ```
 
